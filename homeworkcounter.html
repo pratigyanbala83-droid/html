@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><b>Counter:</b></h2>
+   <span id="Counter"><b><h3>00</h3></b></span>
+
+   
+   <br>
+   <button id="btn-increament">Increament</button>
+   <button id="btn-decreament">Decreament</button>
+   <button id="btn-reset">Reset</button>
+   <script>
+    let counter=0
+    
+    let spanCounter=document.getElementById("Counter")
+
+    function count(){
+        Counter=Counter+1
+        spanCounter.innerText=String(Counter).padStart(2,'0')
+        
+       Counter=0
+        }
+       
+    let btnIncreament=document.getElementById("btn-increament")
+    btnIncreament.onclick=function(){
+       timer=setInterval(count,10)
+      
+    }
+
+   
+    // let btnDecreament=document.getElementById("btn-stop")
+    // btnStop.onclick=function(){
+    //   clearInterval(timer) 
+      
+    // }
+
+    
+    //  let btnReset=document.getElementById("btn-reset")
+    // btnReset.onclick=function(){
+    //   clearInterval(timer)
+    //   spanCentisecond.innerText="00"
+    //   centiseconds=0 
+    //   spanSecond.innerText="00"
+    //   seconds=0
+    // }
+ 
+   </script>
+</body>
+</html>
